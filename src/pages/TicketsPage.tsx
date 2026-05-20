@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 import { useTickets } from "../hooks/useTickets";
 import type { Ticket, TicketPriority, TicketStatus } from "../api/tickets";
 
@@ -98,9 +99,18 @@ export function TicketsPage() {
           <h2 className="mt-1 text-2xl font-semibold text-slate-900">Listado de tickets</h2>
         </div>
 
-        <p className="text-sm text-slate-500">
-          {filteredTickets.length} de {tickets.length} registros
-        </p>
+        <div className="flex items-center gap-3">
+          <p className="text-sm text-slate-500">
+            {filteredTickets.length} de {tickets.length} registros
+          </p>
+
+          <Link
+            to="/tickets/nuevo"
+            className="rounded-md bg-slate-900 px-3 py-2 text-sm font-medium text-white hover:bg-slate-700"
+          >
+            Nuevo ticket
+          </Link>
+        </div>
       </div>
 
       <div className="grid gap-3 rounded-lg border border-slate-200 bg-white p-4 md:grid-cols-4">

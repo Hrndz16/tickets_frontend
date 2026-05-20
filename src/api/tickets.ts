@@ -21,6 +21,13 @@ export type Ticket = {
   closedAt: string | null;
 };
 
+export type CreateTicketRequest = {
+  titulo: string;
+  descripcion: string;
+  prioridad: TicketPriority;
+  categoriaId: number | null;
+};
+
 type ApiResponse<T> = {
   success: boolean;
   message: string;
@@ -30,6 +37,15 @@ type ApiResponse<T> = {
 export const ticketsApi = {
   async list() {
     const response = await http<ApiResponse<Ticket[]>>("/tickets");
+    return response.data;
+  },
+
+  async create(data: CreateTicketRequest) {
+    const response = await http<ApiResponse<Ticket>>("/tickets", {
+      method: "POST",
+      body: JSON.stringify(data),
+    });
+
     return response.data;
   },
 };

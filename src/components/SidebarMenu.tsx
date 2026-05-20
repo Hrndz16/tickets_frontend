@@ -1,6 +1,9 @@
 import { NavLink } from "react-router-dom";
 
-const menuItems = [{ to: "/", label: "Inicio" }];
+const menuItems = [
+  { to: "/", label: "Inicio" },
+  { to: "/tickets", label: "Tickets" },
+];
 
 export function SidebarMenu() {
   return (
@@ -12,6 +15,7 @@ export function SidebarMenu() {
           <NavLink
             key={item.to}
             to={item.to}
+            end={item.to === "/"}
             className={({ isActive }) =>
               [
                 "rounded-md px-3 py-2 text-sm font-medium",

@@ -3,6 +3,7 @@ import { PrivateRoute } from "./components/PrivateRoute";
 import { MainLayout } from "./layouts/MainLayout";
 import { HomePage } from "./pages/HomePage";
 import { LoginPage } from "./pages/LoginPage";
+import { TicketsPage } from "./pages/TicketsPage";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route element={<PrivateRoute />}>
           <Route element={<MainLayout />}>
             <Route path="/" element={<HomePage />} />
+            <Route path="/tickets" element={<TicketsPage />} />
           </Route>
         </Route>
 

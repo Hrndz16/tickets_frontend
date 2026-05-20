@@ -9,3 +9,10 @@
   [32m➜[39m  [1mNetwork[22m: [36mhttp://10.20.55.55:[1m5173[22m/[39m
   [32m➜[39m  [1mNetwork[22m: [36mhttp://172.22.80.1:[1m5173[22m/[39m
 [2m7:13:34 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/index.css[22m
+[2m7:36:21 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/main.tsx[22m
+[2m7:36:21 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[2m7:36:21 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/SidebarMenu.tsx[22m
+[2m7:36:21 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ new dependencies optimized: [33m@tanstack/react-query[32m[39m
+[2m7:36:21 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[2m7:37:58 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/TicketsPage.tsx, /src/index.css[22m
+[2m7:37:58 a. m.[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/pages/TicketsPage.tsx[22m
